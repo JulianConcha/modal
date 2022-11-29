@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Rubik', sans-serif;
+
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: #F7F0DE;
+    text-align: center;
+}
+
+header figure {
+    margin: 0;
+}
+
+
+.contenido{
+    display: flex;
+}
+.contenido_team{
+    max-width: 600px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_rosa {
+    width: 160px;
+    padding: 13px;
+    border-radius: 50px;
+    background-color: #FD6466;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  .btn_blanco {
+    width: 160px;
+    padding: 13px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 1px black solid;
+  }
+
+.articles{
+    max-width: 600px;
+    display: flex;
+    text-align: center;
+    background-color: #F7F7F7;
+    align-items: center;
+    height: 500px;
+}
+
+.article{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article figure img{
+    border-radius: 50%;
+}
+
+.article h2,p{
+    margin: 0;
+}
+
+.article h2{
+    color: #FD6466;
+}
+
+.redes{
+    padding: 15px;
+    color: gray;
+}
+
+.modal{
+    display: none;
+    padding: 100px 10px;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cerrarmodal{
+   
+    z-index: 11;
+    color: black;
+    cursor: pointer;
+}
+
+.btn_transparente{
+   
+    text-align: right;
+}
+.informacion_modal{
+    height: 430px;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
+
+.informacion_modal h3{
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 50px;
+}
+footer{
+   
+    background-color: #FD6466;
+    height: 70px;
+}
+
+@media  screen and (max-width:480px){
+    .contenido{
+        display: inline-block;
+    }
+.contenido_team h1{
+    font-size: 23px;
+}
+
+.botones{
+    display: inline-block;
+}
+
+.botones a{
+    margin-top: 20px;
+}
+
+.articles{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.informacion_modal a{
+    width: 120px;
+}
+
+footer{
+    margin-top: 280px;
+}
+}

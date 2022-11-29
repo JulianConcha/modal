@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="img/logo.jpg" alt="">
+        </figure>
+    </header>
+
+    <section>
+    <div class="contenido ancho">
+        <div class="contenido_team">
+            <h3>Our Team</h3>
+            <h1>A Dedicated Team Of Experts</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi eos odit neque doloremque iste dolores dicta ratione repellat totam minus, sequi repudiandae aliquid, voluptatum delectus officiis aliquam unde? Minima?</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis delectus at eligendi doloribus laudantium voluptates. Animi, delectus numquam ipsam eum aut natus vero sunt, mollitia quibusdam possimus vitae hic repudiandae!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At amet tenetur vel accusantium totam odit qui temporibus. Vel, facilis! Vero veritatis ea quis ex! Eligendi aut impedit dignissimos possimus fugit.</p>
+            <br>
+
+            <div class="botones">
+                <a class="btn_rosa" href="#">LEARN MORE</a>
+                <a class="btn_blanco" href="#">VIEN ALL TEAM</a>
+            </div>
+        </div>
+
+        <div class="articles">
+            <article class="article">
+                <figure>
+                    <img src="img/foto1.jpg" alt="">
+                </figure>
+                <h2>Jessica Cooper</h2>
+                <p>Esthetician</p>
+                
+                <div class="redes">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                
+                <a class="btn_rosa" id="btn_id" href="#">GET IN TOUCH</a>
+            </article>
+
+            <article class="article">
+                <figure>
+                    <img src="img/foto2.jpg" alt="">
+                </figure>
+                <h2>Robert Wagner</h2>
+                <p>Hairdresser</p>
+                
+                <div class="redes">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                
+                <a class="btn_rosa" id="btn_id2" href="#">GET IN TOUCH</a>
+            </article>
+        </div>
+    </div>
+    </section>
+
+    <section class="modal" id="modal_id">
+       
+        <div class="ancho informacion_modal">
+            <div class="btn_transparente">
+                <i id="cerrarbtn" class="cerrarmodal fas fa-times-circle"></i>
+            </div>
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam repellat doloremque? Labore iusto </p>
+            <h3>Name*</h3>
+            <h3>E-mail</h3>
+            <h3>Message</h3>
+
+            <a class="btn_rosa btn_mtama" href="#">SUBMIT</a>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        var modal = document.getElementById("modal_id");
+        var btn_modal = document.getElementById("btn_id");
+        var btn_modal2 = document.getElementById("btn_id2");
+        var cerrar = document.getElementById("cerrarbtn");
+
+        function tiempo() {
+      modal.style.display = "block";
+    }
+    setTimeout(tiempo, 3000);
+
+    btn_modal.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    btn_modal2.onclick = function () {
+      modal.style.display = "block";
+    };
+    cerrar.onclick = function () {
+      modal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    </script>
+</body>
+</html>
